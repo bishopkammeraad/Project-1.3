@@ -1,0 +1,13 @@
+customer_name = input("What is the customers name? : ")
+drinks = int(input("How many drinks purchased this month? : "))
+chips = int(input("Number of bags of chips purchased this month? : "))
+gas = float(input("Dollars of gasoline purchased this month? : "))
+food = float(input("Dollars of merchandise purchased this month? : "))
+
+free_drinks = drinks // 5
+extra = drinks % 5
+
+if free_drinks == 1 :
+    print(free_drinks, 'free drink,',extra,'extra')
+else :
+    print(free_drinks, 'free drinks,',extra,'extra')
